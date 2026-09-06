@@ -1,22 +1,27 @@
 # rnaseq-differential-expression
 
-An R/Bioconductor workflow for differential gene-expression analysis on publicly available RNA-seq count data — from raw counts through normalization, differential testing, and visualization.
+Differential gene expression analysis on public RNA-seq count data, from raw counts through filtering, model fitting, and interpretation of results.
 
-Built to learn the standard Bioconductor analysis path end to end and to practice interpreting expression results, not just producing them.
+Self-directed project, built to learn the differential expression workflow end to end and to practice interpreting results rather than only producing them.
 
-## What it does
+## Status
 
-1. Loads a public count matrix and sample metadata
-2. Filters low-count genes
-3. Normalizes and fits the differential expression model
-4. Tests for differentially expressed genes between conditions, with multiple-testing correction
-5. Visualizes results — PCA, MA plot, volcano plot, heatmap of top genes
-6. Exports a ranked results table
+Work in progress. The analysis scripts are being cleaned up and added to this repository.
+
+## Scope
+
+Load a public count matrix and its sample metadata.
+
+Filter low-count genes.
+
+Fit the differential expression model and test between conditions with multiple-testing correction.
+
+Export a ranked results table.
 
 ## Requirements
 
-R 4.2+ with `DESeq2`, `SummarizedExperiment`, `ggplot2`, `pheatmap`, `dplyr`.
+Python 3.9 or newer, with PyDESeq2, pandas, and NumPy.
 
 ## Notes
 
-Uses publicly available datasets only.
+Public datasets only.
